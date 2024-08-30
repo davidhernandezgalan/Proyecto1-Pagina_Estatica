@@ -10895,13 +10895,13 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 9rem !important;
+  height: 5rem !important;
   /* width: 250px; */
 }
 
 @media screen and (width < 768px){
   #mainNav .navbar-brand img{
-      height: 7rem !important;
+      height: 3rem !important;
   }
 } 
 
@@ -10955,7 +10955,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/main-background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

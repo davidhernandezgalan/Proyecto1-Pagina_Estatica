@@ -10951,15 +10951,37 @@ p {
   }
 }
 header.masthead {
+  position: relative;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/main-background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+}
+.masthead__background{
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+}
+.masthead__img-container{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.masthead__img-container.activa{
+  opacity: 1;
+}
+.masthead__img-container .masthead__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.masthead__img-container .masthead__black{
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;

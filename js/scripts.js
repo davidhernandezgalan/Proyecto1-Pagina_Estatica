@@ -52,3 +52,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const images = document.querySelectorAll('.masthead__img-container');
+let current = 0;
+let time = 5000;
+
+setInterval(() => {
+    current = (current + 1) % images.length;
+    Array.from(images).forEach(image => image.classList.remove('activa'));
+    images[current].classList.add('activa');
+}, time)

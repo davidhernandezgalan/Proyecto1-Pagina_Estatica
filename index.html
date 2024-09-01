@@ -37,7 +37,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead vh-100 d-flex flex-column justify-content-center">
             <div class="masthead__background">
                 <div class="masthead__img-container activa">
                     <img class="masthead__img" src="./assets/img/dapriskalogomain.svg" alt="Logo barbería dapriska">
@@ -301,7 +301,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/rene.jpg" alt="..." />
                             <h4>René</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <p class="text-muted">BARBERO PROFESIONAL</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -311,7 +311,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/pri.jpg" alt="..." />
                             <h4>Jennifer</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <p class="text-muted">ESPECIALISTA EN MEDICINA ESTÉTICA</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -321,7 +321,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/norma.jpg" alt="..." />
                             <h4>Norma</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <p class="text-muted">ESTILISTA Y COSMETÓLOGA PROFESIONAL</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -359,41 +359,9 @@
                     <h2 class="section-heading text-uppercase">Contactanos</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Aquí puedes encontrar nuestra ubicación en Google Maps:</p>
+                    <!-- Código del iframe de Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.923777222303!2d-103.37796452497993!3d20.63196348091997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad5607424f47%3A0xf5597083e1587a87!2sDapriska!5e0!3m2!1ses!2smx!4v1725172007862!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- Submit success message-->
                     <!---->
                     <!-- This is what your users will see when the form-->
@@ -406,14 +374,6 @@
                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
             </div>
         </section>
         <!-- Footer-->
